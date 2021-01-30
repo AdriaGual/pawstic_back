@@ -10,7 +10,10 @@ db.on("error", (error) => console.error(error));
 db.once("open", () => console.log("Connected to Database"));
 
 app.use(express.json());
-
+app.get("/", function (req, res) {
+  //when we get an http get request to the root/homepage
+  res.send("Hello World");
+});
 const publishingsRouter = require("./routes/publishings");
 app.use("/publishings", publishingsRouter);
 
