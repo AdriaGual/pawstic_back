@@ -1,0 +1,39 @@
+
+###Get all users
+GET http://localhost:3000/users
+
+### Get a user
+GET http://localhost:3000/users/600935df9633b7347cddb8ee
+
+### Create a user
+POST http://localhost:3000/users
+Content-Type:application/json
+
+{
+"name":"Camille",
+"email":"j.c@gmail.com",
+"password":"sdfsdf"
+}
+
+### Login a user
+POST http://localhost:3000/users/login
+Content-Type:application/json
+
+{
+"email":"bb@bbbb",
+"password":"bbbb"
+}
+
+### Delete a user
+DELETE http://localhost:3000/users/601538202f40bc1704053114
+
+### Update a user
+PATCH http://localhost:3000/users/600936219633b7347cddb8f0
+Content-Type:application/json
+
+{
+"name":"Jojan"
+}
+
+### Delete all users
+DELETE http://localhost:3000/users

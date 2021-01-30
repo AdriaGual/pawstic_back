@@ -1,0 +1,39 @@
+###Get all publishings
+GET http://localhost:3000/publishings
+
+### Get a publish
+GET http://localhost:3000/publishings/6003603feaf9c513ec58700c
+
+### Create a publish
+POST http://localhost:3000/publishings
+Content-Type:application/json
+
+{
+"name":"Camille",
+"years":2,
+"weight":32,
+"isMale":false,
+"color":"Marrón",
+"userId":2,
+"breed":"Reiner",
+"species":1,
+"latitude":2.2,
+"longitude":3.3,
+"imageUrl":"assets/images/onBoarding/onBoarding2.png",
+"likedBy":"1,2"
+}
+
+### Delete a publish
+DELETE http://localhost:3000/publishings/60070426e6c05620f094e963
+
+### Update a publish
+PATCH http://localhost:3000/publishings/6005ce647070d222b845b7ee
+Content-Type:application/json
+
+{
+"imageUrl":"assets/images/onBoarding/onBoarding2.png"
+}
+
+### Delete all publishings
+DELETE http://localhost:3000/publishings
+
