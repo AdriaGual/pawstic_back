@@ -31,7 +31,7 @@ router.post("/", async (req, res) => {
     species: req.body.species,
     latitude: req.body.latitude,
     longitude: req.body.longitude,
-    dateCreated: req.body.dateCreated,
+    dateCreated: Date.now,
     likedBy: req.body.likedBy,
   });
   try {
