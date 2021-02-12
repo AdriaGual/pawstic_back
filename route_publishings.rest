@@ -27,11 +27,11 @@ Content-Type:application/json
 DELETE http://localhost:3000/publishings/60070426e6c05620f094e963
 
 ### Update a publish
-PATCH http://localhost:3000/publishings/6005ce647070d222b845b7ee
+PATCH http://localhost:3000/publishings/60191c046a0fed00220fa1d7
 Content-Type:application/json
 
 {
-"imageUrl":"assets/images/onBoarding/onBoarding2.png"
+"name":"aaaaa"
 }
 
 ### Delete all publishings
