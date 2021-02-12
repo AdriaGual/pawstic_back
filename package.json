@@ -10,11 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.5.7",
     "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.15",
     "nodemon": "^1.19.4"
-  },"engines": {
+  },
+  "engines": {
     "node": "v14.15.4"
-}
+  }
 }
