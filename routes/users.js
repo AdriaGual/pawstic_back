@@ -23,6 +23,8 @@ router.post("/", async (req, res) => {
     name: req.body.name,
     email: req.body.email,
     password: bcrypt.hashSync(req.body.password, 10),
+    imageUrl:
+      "https://res.cloudinary.com/drws2krnb/image/upload/v1613145557/descargar_r59kay.jpg",
   });
   try {
     const newUser = await user.save();
@@ -57,6 +59,9 @@ router.patch("/:id", getUser, async (req, res) => {
   }
   if (req.body.password != null) {
     res.publishing.password = req.body.password;
+  }
+  if (req.body.imageUrl != null) {
+    res.publishing.imageUrl = req.body.imageUrl;
   }
 
   try {
