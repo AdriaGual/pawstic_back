@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const User = require("../models/user");
 const bcrypt = require("bcrypt");
+
 // Getting all
 router.get("/", async (req, res) => {
   try {
@@ -52,16 +53,16 @@ router.post("/login", async (req, res) => {
 // Updating One
 router.patch("/:id", getUser, async (req, res) => {
   if (req.body.name != null) {
-    res.publishing.name = req.body.name;
+    res.user.name = req.body.name;
   }
   if (req.body.email != null) {
-    res.publishing.email = req.body.email;
+    res.user.email = req.body.email;
   }
   if (req.body.password != null) {
-    res.publishing.password = req.body.password;
+    res.user.password = req.body.password;
   }
   if (req.body.imageUrl != null) {
-    res.publishing.imageUrl = req.body.imageUrl;
+    res.user.imageUrl = req.body.imageUrl;
   }
 
   try {

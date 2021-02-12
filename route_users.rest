@@ -28,7 +28,7 @@ Content-Type:application/json
 DELETE http://localhost:3000/users/601538202f40bc1704053114
 
 ### Update a user
-PATCH http://localhost:3000/users/600936219633b7347cddb8f0
+PATCH http://localhost:3000/users/6026a97c5325c10022167663
 Content-Type:application/json
 
 {
